@@ -1,0 +1,193 @@
+
+<html>
+<head>
+    <title>Needhi_Legal_Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/searchcss.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body 
+    {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    html 
+    {
+      box-sizing: border-box;
+    }
+
+    *, *:before, *:after 
+    {
+      box-sizing: inherit;
+    }
+
+    .column 
+    {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card 
+    {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section 
+    {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .container 
+    {
+      padding: 0 16px;
+    }
+
+    .container::after, .row::after 
+    {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title 
+    {
+      color: grey;
+    }
+
+    .button 
+    {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover 
+    {
+      background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) 
+    {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    ul 
+    {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .header 
+    {
+      background-color:black;
+      position: fixed;
+      top:0;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 10%;
+      box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    }
+
+    li 
+    {
+      float: left;
+    }
+
+    li a 
+    {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+</style>
+
+<div class="header" id="myHeader"  style="color:white;">
+    <ul>
+        <li style="float:right; font-size:1.25em; font-family: 'Poppins', sans-serif;"><a href="/?">Home</a></li>
+        <li style="float:right; font-size:1.25em;font-family: 'Poppins', sans-serif;"><a href="about?">About</a></li>
+        <li style="float:right; font-size:1.25em;font-family: 'Poppins', sans-serif;"><a href="https://drive.google.com/drive/folders/1yQkQ3kmfHyRaOzfELLclEHlQCw2l98n1?q=sharedwith:public%20parent:1yQkQ3kmfHyRaOzfELLclEHlQCw2l98n1" target="_blank">Dataset Link</a></li>
+        <li ><a class="active" href="#about" style="font-size:1.5em;font-family: 'Abril Fatface', cursive;">Needhi Legal Search</a></li>
+    </ul>
+        
+</div>
+<div class="about-section">
+    <h1 style="font-family: 'Abril Fatface', cursive;">About Us</h1>
+    <p style="font-family: 'Poppins', sans-serif;">The Indian Legal System caters to a population of nearly 135 crores, and follows the Common Law system, which means judgments are primarily based on set precedents. 
+      Our product, Needhi Legal Search aims to leverage technology to increase accessibility into the world of law by replacing the jargon-laden case document archive by a specialised legal search engine, which returns relevant documents, with accompanying data visualisations, 
+      that help you navigate easily to case files you are looking for!</p>
+      <p style="font-family: 'Poppins', sans-serif;">Referencing and researching past judgments is an important step in filing, fighting, or deciding a case. 
+        Needhi Legal Search eliminates the need of sifting physically through the millions of documents available based on established law and legal proceedings and presents 
+        the users the top documents for any query they type!</p>
+    
+</div>
+
+<br>
+<h2 style="font-family: 'Poppins', sans-serif;" align="center">Beneficiaries of the Project</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./static/img/image1.jpeg" alt="img1" style="width:100%">
+      <div class="container">
+          <h2 style="font-family: 'Abril Fatface', cursive;">Law Students</h2>
+          
+          <p style="font-family: 'Poppins', sans-serif;">Comprehensive Access to Legal Resources</p>
+          <p style="font-family: 'Poppins', sans-serif;">Efficient Research and Learning Tool</p>
+          <p style="font-family: 'Poppins', sans-serif;">Current and Up-to-Date Information</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./static/img/image2.jpg" alt="img2" style="width:100%">
+      <div class="container">
+          <h2 style="font-family: 'Abril Fatface', cursive;">Judges and Lawyers</h2>
+      
+
+          <p style="font-family: 'Poppins', sans-serif;">Saving Time for Reference to resources</p>
+          <p style="font-family: 'Poppins', sans-serif;">Case analysis and Preparation</p>
+          <p style="font-family: 'Poppins', sans-serif;">Stay Informed About Legal Developments</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="./static/img/image3.jpeg" alt="img3" style="width:100%">
+      <div class="container">
+          <h2 style="font-family: 'Abril Fatface', cursive;">Legal Clients</h2>
+          
+
+          <p style="font-family: 'Poppins', sans-serif;">Transparency and Understanding:</p>
+          <p style="font-family: 'Poppins', sans-serif;">Facilitating Communication with Lawyers</p>
+          <p style="font-family: 'Poppins', sans-serif;">Assisting with Self-Representation</p>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+</html>
