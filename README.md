@@ -17,7 +17,7 @@ The system architecture of Needhi Legal Search utilizes a Vector Space Model (VS
 
 ## Implementation
 - **Backend:** Python with Flask for API creation and management.
-- **Frontend:** HTML/CSS, JavaScript (React/Vue.js) for interactive and responsive user interfaces.
+- **Frontend:** HTML/CSS, JavaScript for interactive and responsive user interfaces.
 - **Data Processing:** Incorporates NLP techniques for data preprocessing, including tokenization, NER, and TF-IDF weighting.
 
 ## Workflow
